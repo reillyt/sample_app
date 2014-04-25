@@ -2,7 +2,7 @@
 
 /* mixins, variables, etc. */
 
-$grayMediumLight: #eaeaea;
+$grayMediumLight: #0e5fd8;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -54,7 +54,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: $grayMediumLight;
 }
 
 p {
@@ -69,7 +69,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: grayMediumLight;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -87,11 +87,11 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  color: $grayMediumLight;
   a {
-    color: $gray;
+    color: $grayMediumLight;
     &:hover {
-      color: $grayDarker;
+      color: $grayMediumLight;
     }
   }
   small {
@@ -121,7 +121,7 @@ footer {
 aside {
   section{
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid $grayMediumLight;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -151,7 +151,7 @@ aside {
   a {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid $grayLighter;
+    border-left: 1px solid $grayMediumLight;
     color: gray;
     &:first-child {
       padding-left: 0;
@@ -209,9 +209,9 @@ input {
   li {
     overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid $grayMediumLight;
     &:last-child {
-      border-bottom: 1px solid $grayLighter;
+      border-bottom: 1px solid $grayMediumLight;
     }
   }
 }
@@ -233,7 +233,7 @@ input {
 }
 
 .timestamp {
-  color: $grayLight;
+  color: $grayMediumLight;
 }
 
 .gravatar {
