@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140415181033) do
+ActiveRecord::Schema.define(version: 20140425084706) do
+
+  create_table "doctors", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password_digest"
+  end
+
+  add_index "doctors", ["email"], name: "index_doctors_on_email", unique: true
 
   create_table "microposts", force: true do |t|
     t.string   "content"
